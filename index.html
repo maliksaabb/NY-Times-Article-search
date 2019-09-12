@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NYTIMES</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    
+    <script src="https://kit.fontawesome.com/eeaaa00cac.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NYTIMES</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    
+    <script src="https://kit.fontawesome.com/eeaaa00cac.js"></script>
+​
+    <style>
+            .form-group{
+                width:100%;
+                text-align: center;
+                margin:1px;
+                margin-top:20px;
+            }
+            form{
+                width:80%;
+                border-width: 1px;
+                border-style: solid;
+                position:relative;
+                text-align: center;
+                margin:-20px;
+                margin-left:150px;
+                height:450px;
+                border-color: lightgrey;
+                
+            }
+            .form-response{
+              display:flex;
+              margin-left: 30px;
+              width:100px;
+              padding:10px;
+              
+              
+            }
+            .card{
+              margin-left: -135px;
+              margin-top:130px;
+              width:1150px
+              
+            }
+            hr {
+              width:1150px;
+              margin-left:-5px;
+            }
+            #here{
+              position: relative;
+              margin:100px;
+              margin-left:-5px;
+              width:1150px;
+              letter-spacing:1px;
+              margin-top: 50px;
+              
+              
+              
+            }
+            #searchBtn{
+              margin-left:-400px;
+            }
+          
+              
+          
+            </style>
+</head>
+<body>
+        <div class="jumbotron jumbotron-fluid" style="background-color: maroon ; color: white; font-size:50px; text-align: center; width:80%; margin-left: 150px; font-style: italic; font-weight: 800; margin-top:-24px;">
+                <div class="container">
+                        <i class="fa fa-newspaper-o"></i> New York Times Search</strong>
+                  <p class="lead"></p>
+                </div>
+              </div>
+​
+              <form>
+                  <div class="card-header">
+                      <strong>
+                        <i class="fa fa-list-alt"></i> Search Parameters</strong>
+                    </div>
+                    <div class="form-group row">
+                      <label for="search-term" class="col-sm-2 col-form-label">Search Term:</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="searchTerm">
+                      </div>
+                    </div>
+                    
+                    
+                     <div class="form-group row">
+                        
+                      <label for="recordNumber" class="col-sm-2 col-form-label">Number of Records to Retrieve:</label>
+                      <div class="col-sm-10">
+                          <select id="article-count" class="custom-select" aria-labelledby="dropdownMenuButton">
+                              <option selected value="1">1</option>
+                              <!-- Setting the option for 5 as default -->
+                              <option value="5" selected>5</option>
+                              <option value="10">10</option>
+                            </select>
+                        
+                        
+                      </div> 
+                    </div>
+                    <fieldset class="form-group">
+                      <div class="row">
+                        
+                        </div>
+                        <div class="form-group row">
+                                <label for="startYear" class="col-sm-2 col-form-label">Start Year(optional):</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="yearOne" >
+                        </div>
+​
+                                <div class="form-group row">
+                                        <label for="inputEmail3" class="col-sm-2 col-form-label">End Year(optional):</label>
+                                        <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="yearTwo">
+                                </div>
+                                </div>
+                      
+                                <div class="form-group row">
+                                    <div class="col-sm-10">
+                                    <button type="button" id="searchBtn" class="btn btn-primary">Search</button>
+                                    <button type="button" id="clearBtn" class="btn btn-primary">Clear</button>
+                                    </div>
+                                    </div>
+                  </form>
+​
+<div id = "here">
+    <div id="results" class="list-group">
+         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active ">
+            <div class="d-flex w-100 justify-content-between">
+                 <h5 class="fa fa-table">Top Articles</h5>
+            </div>
+        </a>
+    </div>
+</div>
+</div>
+                  
+
+                    <script src="assets/nyt.js"></script>
+    
+</body>
+</html>
